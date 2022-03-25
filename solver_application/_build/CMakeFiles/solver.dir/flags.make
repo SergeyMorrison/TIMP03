@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/morrison/TIMP03/formatter_lib -I/home/morrison/TIMP03/formatter_ex_lib -I/home/morrison/TIMP03/solver_lib 
+CXX_INCLUDES = -I/home/morrison/TIMP03/solver_application -I/home/morrison/TIMP03/formatter_ex_lib -I/home/morrison/TIMP03/formatter_lib -I/home/morrison/TIMP03/solver_lib 
 

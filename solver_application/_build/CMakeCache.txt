@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=solver
+CMAKE_PROJECT_NAME:STATIC=solver_app
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -214,6 +214,9 @@ formatter:FILEPATH=formatter-NOTFOUND
 
 //Path to a library.
 formatter_ex:FILEPATH=formatter_ex-NOTFOUND
+
+//Path to a library.
+solver:FILEPATH=solver-NOTFOUND
 
 //Value Computed by CMake
 solver_BINARY_DIR:STATIC=/home/morrison/TIMP03/solver_application/_build

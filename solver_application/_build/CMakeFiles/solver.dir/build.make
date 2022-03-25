@@ -79,9 +79,9 @@ solver_EXTERNAL_OBJECTS =
 
 solver: CMakeFiles/solver.dir/equation.cpp.o
 solver: CMakeFiles/solver.dir/build.make
-solver: /home/morrison/TIMP03/formatter_lib/_build/libformatter.a
-solver: /home/morrison/TIMP03/formatter_ex_lib/_build/libformatter_ex.a
-solver: /home/morrison/TIMP03/solver_lib/_build/libsolver_lib.a
+solver: /home/morrison/TIMP03/formatter_ex_lib/libformatter_ex.a
+solver: /home/morrison/TIMP03/formatter_lib/libformatter.a
+solver: libsolverlib.a
 solver: CMakeFiles/solver.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/morrison/TIMP03/solver_application/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable solver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/solver.dir/link.txt --verbose=$(VERBOSE)

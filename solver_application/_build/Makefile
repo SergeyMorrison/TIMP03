@@ -123,6 +123,19 @@ solver/fast:
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/build
 .PHONY : solver/fast
 
+#=============================================================================
+# Target rules for targets named solverlib
+
+# Build rule for target.
+solverlib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 solverlib
+.PHONY : solverlib
+
+# fast build rule for target.
+solverlib/fast:
+	$(MAKE) -f CMakeFiles/solverlib.dir/build.make CMakeFiles/solverlib.dir/build
+.PHONY : solverlib/fast
+
 equation.o: equation.cpp.o
 
 .PHONY : equation.o
@@ -150,6 +163,33 @@ equation.cpp.s:
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/equation.cpp.s
 .PHONY : equation.cpp.s
 
+home/morrison/TIMP03/solver_lib/solver.o: home/morrison/TIMP03/solver_lib/solver.cpp.o
+
+.PHONY : home/morrison/TIMP03/solver_lib/solver.o
+
+# target to build an object file
+home/morrison/TIMP03/solver_lib/solver.cpp.o:
+	$(MAKE) -f CMakeFiles/solverlib.dir/build.make CMakeFiles/solverlib.dir/home/morrison/TIMP03/solver_lib/solver.cpp.o
+.PHONY : home/morrison/TIMP03/solver_lib/solver.cpp.o
+
+home/morrison/TIMP03/solver_lib/solver.i: home/morrison/TIMP03/solver_lib/solver.cpp.i
+
+.PHONY : home/morrison/TIMP03/solver_lib/solver.i
+
+# target to preprocess a source file
+home/morrison/TIMP03/solver_lib/solver.cpp.i:
+	$(MAKE) -f CMakeFiles/solverlib.dir/build.make CMakeFiles/solverlib.dir/home/morrison/TIMP03/solver_lib/solver.cpp.i
+.PHONY : home/morrison/TIMP03/solver_lib/solver.cpp.i
+
+home/morrison/TIMP03/solver_lib/solver.s: home/morrison/TIMP03/solver_lib/solver.cpp.s
+
+.PHONY : home/morrison/TIMP03/solver_lib/solver.s
+
+# target to generate assembly for a file
+home/morrison/TIMP03/solver_lib/solver.cpp.s:
+	$(MAKE) -f CMakeFiles/solverlib.dir/build.make CMakeFiles/solverlib.dir/home/morrison/TIMP03/solver_lib/solver.cpp.s
+.PHONY : home/morrison/TIMP03/solver_lib/solver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +199,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... solver"
+	@echo "... solverlib"
 	@echo "... equation.o"
 	@echo "... equation.i"
 	@echo "... equation.s"
+	@echo "... home/morrison/TIMP03/solver_lib/solver.o"
+	@echo "... home/morrison/TIMP03/solver_lib/solver.i"
+	@echo "... home/morrison/TIMP03/solver_lib/solver.s"
 .PHONY : help
 
 

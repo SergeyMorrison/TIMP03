@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/morrison/TIMP03/solver_application/_build
 
 # The main recursive "all" target.
 all: CMakeFiles/solver.dir/all
+all: CMakeFiles/solverlib.dir/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/solver.dir/clean
+clean: CMakeFiles/solverlib.dir/clean
 
 .PHONY : clean
 
@@ -71,7 +73,7 @@ clean: CMakeFiles/solver.dir/clean
 # Target rules for target CMakeFiles/solver.dir
 
 # All Build rule for target.
-CMakeFiles/solver.dir/all:
+CMakeFiles/solver.dir/all: CMakeFiles/solverlib.dir/all
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/depend
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/morrison/TIMP03/solver_application/_build/CMakeFiles --progress-num=1,2 "Built target solver"
@@ -79,7 +81,7 @@ CMakeFiles/solver.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/solver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/morrison/TIMP03/solver_application/_build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/morrison/TIMP03/solver_application/_build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/solver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/morrison/TIMP03/solver_application/_build/CMakeFiles 0
 .PHONY : CMakeFiles/solver.dir/rule
@@ -93,6 +95,33 @@ solver: CMakeFiles/solver.dir/rule
 CMakeFiles/solver.dir/clean:
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/clean
 .PHONY : CMakeFiles/solver.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/solverlib.dir
+
+# All Build rule for target.
+CMakeFiles/solverlib.dir/all:
+	$(MAKE) -f CMakeFiles/solverlib.dir/build.make CMakeFiles/solverlib.dir/depend
+	$(MAKE) -f CMakeFiles/solverlib.dir/build.make CMakeFiles/solverlib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/morrison/TIMP03/solver_application/_build/CMakeFiles --progress-num=3,4 "Built target solverlib"
+.PHONY : CMakeFiles/solverlib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/solverlib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/morrison/TIMP03/solver_application/_build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/solverlib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/morrison/TIMP03/solver_application/_build/CMakeFiles 0
+.PHONY : CMakeFiles/solverlib.dir/rule
+
+# Convenience name for target.
+solverlib: CMakeFiles/solverlib.dir/rule
+
+.PHONY : solverlib
+
+# clean rule for target.
+CMakeFiles/solverlib.dir/clean:
+	$(MAKE) -f CMakeFiles/solverlib.dir/build.make CMakeFiles/solverlib.dir/clean
+.PHONY : CMakeFiles/solverlib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
